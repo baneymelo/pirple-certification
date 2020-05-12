@@ -24,7 +24,7 @@ switch(myFruit){
     const validValues = ["seconds", "minutes", "hours", "days", "second", "minute", "hour", "day"];
     let matches = 0;
 
-        const validateLabels = () => {
+    const validateLabels = () => {
         labels.forEach(function (element){
             for(let i=0;i<validValues.length;i++){
                 element === validValues[i] ? ++matches : matches;
@@ -32,11 +32,20 @@ switch(myFruit){
             
         })
 
-        matches == 2 ? matches : console.log("Incorrect: Verify labels's values");
+        return matches == 2 ? true : console.log("Incorrect: Verify labels's values");
         
     }
 
-validateLabels();
+    const validateValues = () => {
+        values.forEach(element){
+            
+        }
+    }
+
+    validateLabels() ? true : console.log("Incorrect: Verify labels's values");
+    console.log(validateLabels());
+     
+     
 
     /*const dataValidate = (originalArray,compareArray) => {
         
