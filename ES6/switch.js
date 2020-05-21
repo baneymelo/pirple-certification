@@ -128,4 +128,4 @@ let timeAdder = (a, b, c, d) => {
 
 
 }
-timeAdder(5, "hours", 5, "days");
+timeAdder(5, "hour", 5, "days");
