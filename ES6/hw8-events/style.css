@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.player{
+    margin-bottom: 2em;
+    border: 1px dotted #000;
+    height: 25px;
+    width: 80px;
+}
+
+.player > label {
+    font-size: 20px;
+}
+
+.player > label > span {
+
+    width: 50px;
+}
+
+.container{
+     margin: 15em;
+}
+
+.divRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.toe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+}
