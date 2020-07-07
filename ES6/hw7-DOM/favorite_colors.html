@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2020 by baneymelo (http://jsbin.com/gihequk/10/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITLE</title>
+</head>
+<body>
+    
+    <h1>Node JS</h1>
+    <h2>Node Js is a runtime based on JavaScript, whose purpose is can run javascript on server-side similary to other languages like PHP, Ruby, java, Python and many others programming languages</h2>
+
+    <div id="rectangleWrapper"></div>
+
+    
+<script id="jsbin-javascript">
+'use strict'
+ 
+const divMain = document.getElementById("rectangleWrapper");
+
+const hexCode = ["#1EC53A","#32B848","#3AA84C","#3D944C","#387743","#36653E","#194320","#364639","#0F2213","#021C07"];
+// newP.innerHTML = "Hi I'm a div";
+
+for(let i=0;i<10;i++){
+  
+  const newDiv = document.createElement('DIV');
+  const newP = document.createElement('P');
+  
+  newDiv.id = "unique";
+  newDiv.className = `R${i}`
+  newDiv.style.background = `${hexCode[i+1]}`;
+  newDiv.style.width = "200px";
+  newDiv.style.height = "200px";
+  
+  newP.innerHTML = hexCode[i];
+  newP.style.width = "200px";
+  
+  divMain.appendChild(newDiv);
+  divMain.appendChild(newP);
+}
+
+divMain.style.padding = "50px 50px 0";
+document.title = document.querySelector("h1").textContent;
+
+</script>
+</body>
+<script src="DOM.js"></script>
+</html>
